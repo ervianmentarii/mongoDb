@@ -988,7 +988,7 @@ db.user.bulkWrite([
         }
     }}
 ]);
-
+db.user.find()
 //bulkwrite delete
 db.user.bulkWrite([
     {deleteOne:{
@@ -998,7 +998,7 @@ db.user.bulkWrite([
         filter:{lokasi_user:'Medan'}
     }},
     {deleteOne:{
-        filter:{no_tlpn_user:"0821-8765-4321"}
+        filter:{no_tlpn_user:"0812-3344-5566"}
     }},
     {deleteOne:{
         filter:{nama_user:"Budi Santoso"}
